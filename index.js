@@ -36,9 +36,12 @@ console.log(camelTail);
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
-
+const tipAmount = billTotal * 0.15;
 
 // Print out the tipAmount
+console.log(tipAmount);
+
+
 
 
 
