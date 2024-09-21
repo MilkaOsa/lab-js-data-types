@@ -49,11 +49,11 @@ console.log(tipAmount);
 /*******************************************
     Iteration 2.2 | Generate Random Number
 *******************************************/
+const randomNumber = Math.floor(Math.random() * 10) + 1;
 
-// Generate a random integer between 1 and 10 (inclusive)
+// Print out the randomNumber
+console.log(randomNumber);
 
-
-// Print the generated random number
 
 
 
@@ -64,17 +64,41 @@ console.log(tipAmount);
 const a = true;
 const b = false;
 
-// Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
+// Guess the output and compare it with actual results
 
-const expression2 = a || b;
+// 1. a && b
+// AND: solo es verdadero si ambos son verdaderos. En este caso, a es true y b es false.
+const expression1 = a && b;  // false
 
-const expression3 = !a && b;
+// 2. a || b
+// OR: es verdadero si al menos uno de los dos es verdadero. a es true, por lo tanto, el resultado es true.
+const expression2 = a || b;  // true
 
-const expression4 = !(a && b);
+// 3. !a && b
+// NOT a: convierte a (true) en false. Entonces, false && b (false). Ambos son falsos.
+const expression3 = !a && b;  // false
 
-const expression5 = !a || !b;
+// 4. !(a && b)
+// Primero evaluamos a && b, que es false, y luego el NOT de false es true.
+const expression4 = !(a && b);  // true
 
-const expression6 = !(a || b);
+// 5. !a || !b
+// NOT a es false, NOT b es true. OR entre false y true da true.
+const expression5 = !a || !b;  // true
 
-const expression7 = a && a;
+// 6. !(a || b)
+// Primero evaluamos a || b, que es true. El NOT de true es false.
+const expression6 = !(a || b);  // false
+
+// 7. a && a
+// AND entre dos valores verdaderos da true.
+const expression7 = a && a;  // true
+
+// Print the actual results
+console.log("expression1:", expression1);  // false
+console.log("expression2:", expression2);  // true
+console.log("expression3:", expression3);  // false
+console.log("expression4:", expression4);  // true
+console.log("expression5:", expression5);  // true
+console.log("expression6:", expression6);  // false
+console.log("expression7:", expression7);  // true
